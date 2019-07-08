@@ -1,0 +1,23 @@
+import urllib.request
+from bs4 import BeautifulSoup
+
+
+
+def main():
+    
+    # URL 데이터를 가져올 사이트 url 입력
+    url = "http://www.naver.com"
+        
+    # URL 주소에 있는 HTML 코드를 soup에 저장합니다.
+    source_code = urllib.request.urlopen(url).read()
+    soup = BeautifulSoup(source_code, "html.parser")
+    
+    list = []
+    
+    for naver in soup.find_all("span", class_="ah_k") :
+        list.append(naver.getText())
+        
+    print(list)
+
+if __name__ == "__main__":
+    main()
