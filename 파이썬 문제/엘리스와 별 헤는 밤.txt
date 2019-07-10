@@ -1,0 +1,15 @@
+inputData = int(input())
+
+s1 = "*" + (" " * inputData) + "*" + (" " * inputData) + "*"
+if(inputData % 2 == 0):
+    s2 = "*" + (" " * (inputData - 1)) + "*"
+else:
+    s2 = "*" + (" " * inputData) + "*"
+        
+print(s1)
+print(s2.center(len(s1)))
+
+
+inputData = int(input())
+
+s1 = "*" + (" " * inputData) + "*" + (" " * inputData) + "*"

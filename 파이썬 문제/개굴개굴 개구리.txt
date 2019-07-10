@@ -1,0 +1,12 @@
+s = input()
+# print(s)
+size = len(s)
+
+# s.split(' ')
+
+for i in range(0, size, 1):
+    if(s[i] == ' '):
+        print(' ', end='')
+    else:
+        print('°³±¼', end='')
+        
