@@ -1,0 +1,18 @@
+def main():
+    text_one = "나는 짜장면을 좋아합니다."
+    
+    text_list = text_one.split()
+    
+    print(text_list)
+    
+    print(text_list[0])
+    print(text_list[1])
+    print(text_list[2])
+    
+    
+    
+    print(text_one.replace("나는", "너는"))
+
+
+if __name__ == "__main__":
+    main()
